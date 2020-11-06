@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world!</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Osnovne informacije</legend>
+            <p>
+                <label>Skola</label>
+                <input type="text" value="IT Bootcamp" disabled>
+            </p>
+            
+            
+            <p>
+                <label>Ime i prezime:</label>
+                <input type="text" placeholder="Unesite ime i prezime"/>
+            </p>
+            <p>
+                <label>Godine: </label>
+                <input type="number" value="18" min="18" step="1"/>
+            </p>
+            <p>
+                <label>Unesite datum poletanja:</label>
+                <input type="date" min="2020-12-01" max="2021-01-31" step="7">
+            </p>
+            <p>
+                <label>Odaberte pol:</label>
+               Neopredeljen <input type="radio" name="pol" value="n" checked>
+               Zenski <input type="radio" name="pol" value="z">
+               Muski<input type="radio" name="pol" value="m">
+            </p>
+            <p>
+                <label>Odaberite programske jezike:</label>
+                <br>
+                PHP<input type="checkbox" name="prog" value="php" checked>
+                <br>
+                JS<input type="checkbox" name="prog" value="js">
+                <br>
+                C<input type="checkbox" name="prog" value="c">
+                <br>
+                Java<input type="checkbox" name="prog" value="java">
+                <br>
+                Phyton<input type="checkbox" name="prog" value="phyton">
+    
+
+            </p>
+
+                <p>
+                    <label>Odaberite kurs:</label>
+               Web programiranje <input type="radio" name="kurs" value="wp"> 
+                QA <input type="radio" name="kurs" value="qa">
+
+            </p>
+
+            <p>
+                <label>Odaberite boju:</label>
+                <input type="color" value="#0000FF">
+            </p>
+            <p>
+                <label>Odabir datoteke:</label>
+                <input type="file" size="50"/>
+            </p>
+            <p>
+                <label>Najzanimljivija lekcija 1. nedelje: </label>
+                <select name="lekcija" id="">
+                    <option value="HTML">Osnovi HTML</option>
+                    <option value="tabele">Tabele</option>
+                    <option value="liste">Liste</option>
+                    <option value="forme">Forme</option>
+                    <option value="git">Git Hub</option>
+
+
+                </select>
+            </p>
+
+            <p>
+                <label>Odaberite kurs:</label>
+                <select name="selectKurs">
+                    <optgroup label="Beograd">
+                        <option value="BgWeb">Web programiranje</option>
+                        <option value="BgQA">QA</option>
+                        <option value="BGJava">Java</option>
+                    </optgroup>
+
+                    <optgroup label="Nis">
+                        <option value="NisWeb">Web programiranje</option>
+                        <option value="NisQA">QA</option>
+                        <option value="NisJava">Java</option>
+                    </optgroup>
+
+                    <optgroup label="KiM">
+                        <option value="KiMWeb">Web programiranje</option>
+                        
+                    </optgroup>
+
+                    <optgroup label="Novi Sad">
+                    <option value="NSWeb">Web programiranje</option>
+                    <option value="NSQA">QA</option>
+                    <option value="NSJava">Java</option>
+                        
+                    </optgroup>
+                </select>
+            </p>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Ostale informacije</legend>
+            <p>
+                <label>E-mail</label>
+                <input type="email"/>
+            </p>
+            <p>
+                <label>Sifra</label>
+                <input type="password" value="********"/>
+            </p>
+            
+        </fieldset>
+        
+        <input type="button" value="Potrvdi" onclick="alert('Pozdrav')">
+        <input type="reset" value="Resetuj">
+        <input type="submit" value="Posalji">
+        <textarea rows="10" cols="40"></textarea>
+    </form>
+</body>
+</html>
